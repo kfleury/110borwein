@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+##
+## EPITECH PROJECT, 2020
+## 107transfer
+## File description:
+## main 110borwein
+##
+import sys
+import function as f
+import error
+
+
+def main():
+    if "-h" in sys.argv or "--help" in sys.argv:
+        error.usage()
+    error.all_error(sys.argv, len(sys.argv))
+    f.calc(int(sys.argv[0]))
+
+
+if __name__ == '__main__':
+    main()
